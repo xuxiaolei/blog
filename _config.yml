@@ -81,7 +81,7 @@ collections:
         output: true
         permalink: /wiki/:path/
 
-repository: mzlogin/mzlogin.github.io
+repository: xuxiaolei/blog
 
 # ---------------- #
 #      Comments    #
@@ -95,15 +95,16 @@ disqus:
     username: 
 # https://imsun.net/posts/gitment-introduction/
 gitment:
-    owner: xuxiaolei
-    repo: blog-comments
+    owner: 
+    repo: 
     oauth:
-        client_id: d2e1cbbd298958076462
-        client_secret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
+        client_id: 
+        client_secret: 
 # https://github.com/gitalk/gitalk#install
 gitalk:
+    id: 'window.location.pathname'
     owner: xuxiaolei
-    repo: blog-comments
+    repo: blog
     clientID: c0a0017e5e2b24cacc42
     clientSecret: f585a0f45bbe045e1daf05176d578f3f9de15eb3
 # 在使用其它评论组件时可点击显示 Disqus
