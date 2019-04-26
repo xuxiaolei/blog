@@ -1,6 +1,6 @@
 # 我的个人博客
 
-我的个人博客：<http://blog.ityet.com>
+我的个人博客：<http://itop.ga>
 
 ## 概览
 
@@ -16,7 +16,7 @@
 
 ## 效果预览
 
-**[在线预览 &rarr;](https://mazhuang.org)**
+**[在线预览 &rarr;](http://itop.ga)**
 
 ![screenshot home](https://mazhuang.org/assets/images/screenshots/home.png)
 
