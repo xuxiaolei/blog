@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: http://itop.ga
+url: https://itop.ga
 date_format: "ordinal"
 title:   Leo’s Blog
 subtitle: ""
