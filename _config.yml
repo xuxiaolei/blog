@@ -107,7 +107,7 @@ gitalk:
     repo: blog
     clientID: c0a0017e5e2b24cacc42
     clientSecret: 67f9034456211d82a659e2cadd06da52f820f22e
-    createIssueManually:true
+    createIssueManually: true
 lazy_load_disqus : false
 
 # ---------------- #
