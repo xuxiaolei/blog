@@ -102,11 +102,11 @@ gitment:
         client_secret: 
 # https://github.com/gitalk/gitalk#install
 gitalk:
-    id: decodeURI(location.pathname)
+    id: decodeURI(window.location.pathname)
     owner: xuxiaolei
     repo: blog
     clientID: c0a0017e5e2b24cacc42
-    clientSecret: f585a0f45bbe045e1daf05176d578f3f9de15eb3
+    clientSecret: 67f9034456211d82a659e2cadd06da52f820f22e
     createIssueManually:true
 lazy_load_disqus : false
 
