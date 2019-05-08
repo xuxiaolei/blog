@@ -402,8 +402,6 @@ WHERE A.EMP_SUPV_ID = B.EMP_ID;
 
 4. MySQL 不支持 FULL OUTER JOIN，可以使用 LEFT JOIN 和 UNION 来达到相同的效果；
 
-假如你对我的文章感兴趣，可以关注我的微信公众号 isprogrammer 随时阅读更多内容。
-
 ## 参考
 
 * [Visual Representation of SQL Joins][2]

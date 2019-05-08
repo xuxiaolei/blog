@@ -46,6 +46,3 @@ keywords: Android, 源码, rtfsc
 
    一方面是将你的学习成果保留下来，方便随时查阅，毕竟只凭脑子记忆是不靠谱的；另一方面在学习的过程中，也能帮助理解。
 
-对我的文章感兴趣的朋友，可以关注我的微信公众号 isprogrammer，接收我的更新通知。
-
-<div align="center"><img width="192px" height="192px" src="https://mazhuang.org/assets/images/qrcode.jpg"/></div>

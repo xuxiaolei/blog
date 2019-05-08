@@ -6,9 +6,7 @@ description: 分析 Android 消息机制的主要类
 keywords: Android, Handler, Looper, Message, MessageQueue
 ---
 
-本系列文章在 <https://github.com/mzlogin/rtfsc-android> 持(jing)续(chang)更(duan)新(geng)中，欢迎有兴趣的童鞋们关注。
-
-书接上文，在分析 Toast 源码的过程中我们涉及到了 Handler，这个在 Android 开发里经常用到的类——线程切换、顺序执行、延时执行等等逻辑里往往少不了它的身影，跟它一起搭配使用的通常是 Runnable 和 Message，还有它身后的好基友 Looper 与 MessageQueue。Runnable 相信大家都很熟悉了，本文的主角就是标题里的三剑客——Handler、Looper 和 MessageQueue，当然少不了说到 Message。
+在分析 Toast 源码的过程中我们涉及到了 Handler，这个在 Android 开发里经常用到的类——线程切换、顺序执行、延时执行等等逻辑里往往少不了它的身影，跟它一起搭配使用的通常是 Runnable 和 Message，还有它身后的好基友 Looper 与 MessageQueue。Runnable 相信大家都很熟悉了，本文的主角就是标题里的三剑客——Handler、Looper 和 MessageQueue，当然少不了说到 Message。
 
 本文使用的工具与源码为：Chrome、插件 insight.io、GitHub 项目 [aosp-mirror/platform_frameworks_base][1]
 
@@ -548,10 +546,5 @@ public final class ActivityThread {
 
 关于 Handler、Looper 和 MessageQueue 的分析在此先告一段落，这部分的内容比较容易分析，但里面细节挺多的，写得有点杂且不全，有点只见树木不见森林的感觉，想要配合画一些图，但找不到合适的画图形式。对此类主题的解析方式必须要再探索优化一下，大家有好的建议请一定告知。
 
----
-
-最后，照例要安利一下我的微信公众号「闷骚的程序员」，扫码关注，接收 rtfsc-android 的最近更新。
-
-<div align="center"><img width="192px" height="192px" src="https://mazhuang.org/assets/images/qrcode.jpg"/></div>
 
 [1]: https://github.com/aosp-mirror/platform_frameworks_base

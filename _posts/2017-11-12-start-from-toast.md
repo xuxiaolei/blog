@@ -6,8 +6,6 @@ description: Android 源码分析，深入解析 Toast。
 keywords: RTFSC, Android, Toast
 ---
 
-本系列文章在 <https://github.com/mzlogin/rtfsc-android> 持续更新中，欢迎有兴趣的童鞋们关注。
-
 ![](/images/posts/android/toast.png)
 
 （图 from Android Developers）
@@ -870,10 +868,6 @@ private static class TN extends ITransientNotification.Stub {
 写这篇文章花费的时间比较长，所以并不能按照预计的节奏更新，这里表示抱歉。另外，各位如果有耐心读到这里，觉得本文的思路是否清晰，是否能跟随文章的节奏理解一些东西？因为我也在摸索写这类文章的组织形式，所以也希望能收到反馈和建议，以作改进，先行谢过。
 
 ---
-
-最后，照例要安利一下我的微信公众号「闷骚的程序员」，扫码关注，接收 rtfsc-android 的最近更新。
-
-<div align="center"><img width="192px" height="192px" src="https://mazhuang.org/assets/images/qrcode.jpg"/></div>
 
 [1]: https://developer.android.com/reference/android/widget/Toast.html
 [2]: https://developer.android.com/guide/topics/ui/notifiers/toasts.html
