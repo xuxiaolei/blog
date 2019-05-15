@@ -144,7 +144,8 @@ public void WriteJsonDates()
 
 6. 自定义序列化的字段名称
 默认情况下,Json.Net序列化后结果中的字段名称和类中属性的名称一致.
-如果想自定义序列化后的字段名称,可以使用JsonProperty.例如： 
+如果想自定义序列化后的字段名称,可以使用JsonProperty.例如：
+ 
 ```c#
 public class Person
  {
@@ -159,6 +160,7 @@ public class Person
 > {"Id":1,"Name":"杨过"}
 
 如果不想用默认的字段名称，可以使用如下方式：
+
 ```c#
 public class Person
 {
@@ -169,5 +171,6 @@ public class Person
     public string Name { get; set; }
 }
 ```
+
 这样序列化的结果为：
 > {"PersonId":1,"PersonName":"杨过"}
