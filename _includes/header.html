@@ -20,7 +20,6 @@
     <!-- Latest compiled and minified CSS -->
     {% for css in page.css %}
     <link rel="stylesheet" href="{{ site.url }}/assets/css/{{css}}">
-	<link href="https://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css" rel="stylesheet">  
     {% endfor %}
 
     {% if site.ios_app_name %}
@@ -70,8 +69,6 @@
     <script src="{{ site.url }}/assets/vendor/jquery/dist/jquery.min.js"></script>
     <script src="{{ site.url }}/assets/js/jquery-ui.js"></script>
     <script src="{{ site.url }}/assets/js/main.js"></script>
-	<script src="http://cdn.bootcss.com/highlight.js/8.0/highlight.min.js"></script>  
-	<script >hljs.initHighlightingOnLoad();</script>  
 </head>
 <body class="{{ page.class }}" data-mz="{{ page.class }}">
     <header class="site-header">
