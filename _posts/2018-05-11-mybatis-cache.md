@@ -24,11 +24,11 @@ MyBatis是常见的Java数据库访问层框架。在日常工作中，开发人
 
 在应用运行过程中，我们有可能在一次数据库会话中，执行多次查询条件完全相同的SQL，MyBatis提供了一级缓存的方案优化这部分场景，如果是相同的SQL语句，会优先命中一级缓存，避免直接对数据库进行查询，提高性能。具体执行过程如下图所示。
 
-![一级缓存](https://raw.githubusercontent.com/xuxiaolei/images/master/1650e88b1f67be7a740ba561d92c40bb_6e38df6a.jpg)
+![一级缓存](https://img.itgo.ml/img//1650e88b1f67be7a740ba561d92c40bb_6e38df6a.jpg)
 
 每个SqlSession中持有了Executor，每个Executor中有一个LocalCache。当用户发起查询时，MyBatis根据当前执行的语句生成* MappedStatement *，在Local Cache进行查询，如果缓存命中的话，直接返回结果给用户，如果缓存没有命中的话，查询数据库，结果写入* Local Cache *，最后返回结果给用户。具体实现类的类关系图如下图所示。
 
-![类关系图](https://raw.githubusercontent.com/xuxiaolei/images/master/596f49b3eb0c908c3f12ef64c85a6027_d76ec5fe.jpg)
+![类关系图](https://img.itgo.ml/img//596f49b3eb0c908c3f12ef64c85a6027_d76ec5fe.jpg)
 
 ## 一级缓存配置
 
@@ -70,7 +70,7 @@ public void getStudentById() throws Exception {
 
 执行结果：
 
-![执行结果](https://raw.githubusercontent.com/xuxiaolei/images/master/2156c110a38bb97c843e20b80ad5a358_9e996384.jpg)
+![执行结果](https://img.itgo.ml/img//2156c110a38bb97c843e20b80ad5a358_9e996384.jpg)
 
 我们可以看到，只有第一次真正查询了数据库，后续的查询使用了一级缓存。
 
@@ -92,7 +92,7 @@ public void addStudent() throws Exception {
 
 执行结果：
 
-![执行结果2](https://raw.githubusercontent.com/xuxiaolei/images/master/58028fcbb82b2557a42818ae156415f8_fb6a78e0.jpg)
+![执行结果2](https://img.itgo.ml/img//58028fcbb82b2557a42818ae156415f8_fb6a78e0.jpg)
 
 我们可以看到，在修改操作后执行的相同查询，查询了数据库，一级缓存失效。
 
@@ -117,7 +117,7 @@ public void testLocalCacheScope() throws Exception {
 }
 ```
 执行结果：
-![执行结果3](https://raw.githubusercontent.com/xuxiaolei/images/master/5c8a47610c7bc88c4c08c2d69f8b3856_f480ac76.jpg)
+![执行结果3](https://img.itgo.ml/img//5c8a47610c7bc88c4c08c2d69f8b3856_f480ac76.jpg)
 
 * SqlSession2 *更新了id为1的学生的姓名，从凯伦改为了小岑，但* Session1 *之后的查询中，id为1的学生的名字还是凯伦，出现了脏数据，也证明了之前的设想，一级缓存只在数据库会话内部共享。
 
@@ -127,7 +127,7 @@ public void testLocalCacheScope() throws Exception {
 
 - 工作流程
 一级缓存执行的时序图，如下图所示。
-![一级缓存执行的时序图](https://raw.githubusercontent.com/xuxiaolei/images/master/38f27a979684e29b5d14ac30b9c711f6_bb851700.png)
+![一级缓存执行的时序图](https://img.itgo.ml/img//38f27a979684e29b5d14ac30b9c711f6_bb851700.png)
 
 #### 源码分析
 

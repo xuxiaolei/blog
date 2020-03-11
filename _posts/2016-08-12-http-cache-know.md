@@ -66,7 +66,7 @@ Etag/If-None-Match也要配合Cache-Control使用。Etag：web服务器响应请
 
 ### 用户行为与缓存
 浏览器缓存行为还有用户的行为有关，强制刷新（Ctrl +F5） 具体请参考文末 参考[6]
-![缓存行为](https://raw.githubusercontent.com/xuxiaolei/images/master/20190510165828.png)
+![缓存行为](https://img.itgo.ml/img/20190510165828.png)
 
 ## 参考
 [1] 浏览器缓存机制http://www.cnblogs.com/skynet/archive/2012/11/28/2792503.html

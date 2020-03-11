@@ -8,7 +8,7 @@ keywords: 番茄工作法, PDCA
 
 ## 一、番茄工作规则
 
-![](https://raw.githubusercontent.com/xuxiaolei/images/master/27ba9252e4e3b65ca655ccd7378f7bb7_u%3D3150687119%2C3117711524%26fm%3D173%26app%3D25%26f%3DJPEG_w%3D640%26h%3D482%26s%3D4986E813D30470ED855145E003007036.jpg)
+![](https://img.itgo.ml/img/27ba9252e4e3b65ca655ccd7378f7bb7_u%3D3150687119%2C3117711524%26fm%3D173%26app%3D25%26f%3DJPEG_w%3D640%26h%3D482%26s%3D4986E813D30470ED855145E003007036.jpg)
 
 1. 一个番茄时间共30分钟，包括25分钟的工作时间和5分钟的休息时间。
 2. 一个番茄时间是不可分割的--时间的的最小单位是一个番茄时间。
@@ -23,7 +23,7 @@ keywords: 番茄工作法, PDCA
 
 1.  番茄计时器（一个计时器就行）
 2. 一张工作计划表
-![](https://raw.githubusercontent.com/xuxiaolei/images/master/5fa0f992ec29fe9c614296dfcda88bfa_u%3D1273329402%2C3639676843%26fm%3D173%26app%3D25%26f%3DJPEG_w%3D637%26h%3D521%26s%3D8CF8EC12391E50CC08D00DCB0000C0B2.jpg)
+![](https://img.itgo.ml/img/5fa0f992ec29fe9c614296dfcda88bfa_u%3D1273329402%2C3639676843%26fm%3D173%26app%3D25%26f%3DJPEG_w%3D637%26h%3D521%26s%3D8CF8EC12391E50CC08D00DCB0000C0B2.jpg)
 
 ## 三、番茄工作法的执行
 
@@ -31,7 +31,7 @@ keywords: 番茄工作法, PDCA
 
 每天的事项按优先级排序
 
-![](https://raw.githubusercontent.com/xuxiaolei/images/master/6c628e32947fd40b00cd15385c6d46f7_u%3D3208263110%2C873796800%26fm%3D173%26app%3D25%26f%3DJPEG_w%3D640%26h%3D480%26s%3D5096E83257424EE806E5BCD9020050B1.jpg)
+![](https://img.itgo.ml/img/6c628e32947fd40b00cd15385c6d46f7_u%3D3208263110%2C873796800%26fm%3D173%26app%3D25%26f%3DJPEG_w%3D640%26h%3D480%26s%3D5096E83257424EE806E5BCD9020050B1.jpg)
 
 为每项活动预估番茄钟（即时间），但不要超过每天的最大番茄钟数量，并为临时事留出空间
 

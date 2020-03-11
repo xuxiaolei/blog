@@ -25,26 +25,26 @@ RegistrationCode= 2EAD-35GH-66NN-ZYBA
 
 第六步：在软件安装目录，右键点击ISAPI_Rewrite.dll的属性按钮，在弹出的对话框中选择“安全”标签，点击添加，如下图：
 
-![](httpsraw.githubusercontent.comxuxiaoleiimagesmaster20190717173631.png)
+![](https://img.itgo.ml/img/20190717173631.png)
 
 在弹出的对话框中选择高级，如下图：
 
-![](httpsraw.githubusercontent.comxuxiaoleiimagesmaster20190717173735.png)
+![](https://img.itgo.ml/img/20190717173735.png)
 
 在接下来的对话框中再选择“立即查找”，如下图
 
-![](httpsraw.githubusercontent.comxuxiaoleiimagesmaster20190717173820.png)
+![](https://img.itgo.ml/img/20190717173820.png)
 
 在下面的用户列表中找到everyone这个用户，点击确定，如下图：
 
-![](httpsraw.githubusercontent.comxuxiaoleiimagesmaster20190717173852.png)
+![](https://img.itgo.ml/img/20190717173852.png)
 
 再点击确定，如下图：
 
-![](httpsraw.githubusercontent.comxuxiaoleiimagesmaster20190717173938.png)
+![](https://img.itgo.ml/img/20190717173938.png)
 
 最后再勾选上全部的权限，点击确定就可以了，如下图：
 
-![](httpsraw.githubusercontent.comxuxiaoleiimagesmaster20190717174025.png)
+![](https://img.itgo.ml/img/20190717174025.png)
 
 第七步：大功告成，这样以后你的程序如果支持伪静态的话就把.htaccess文件放到你的网站根目录下就可以了，默认是全局支持的！

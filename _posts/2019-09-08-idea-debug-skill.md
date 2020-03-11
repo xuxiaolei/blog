@@ -9,11 +9,11 @@ keywords:  IDEA
 
 `Intellij IDEA` 的`debug`断点调试是有一个模式的选择的，就像下面这张图，平时我们都使用的是默认的 `ALL`（在`Eclipse`中默认是线程模式） ，这种模式我们只能将一个线程断下来，但其他线程却已经执行过了；而将其改为 `Thread` 后，就可以多个线程都断下来，并且可以很方便的切换线程的执行流程，这就是多线程调试。
 
-![](https://raw.githubusercontent.com/xuxiaolei/images/master/20191009091934.png)
+![](https://img.itgo.ml/img/20191009091934.png)
 
 在`debug`控制台能够很方便的查看线程的执行状态，也可以很方便的选择某个线程去执行：
 
-![](https://raw.githubusercontent.com/xuxiaolei/images/master/20191009091917.png)
+![](https://img.itgo.ml/img/20191009091917.png)
 
 # 二、回退断点
 
@@ -21,15 +21,15 @@ keywords:  IDEA
 
 其实IDEA的调试功能是非常强大的，我们来看看熟悉的调试窗口：
 
-![](https://raw.githubusercontent.com/xuxiaolei/images/master/20191009091903.png)
+![](https://img.itgo.ml/img/20191009091903.png)
 
 使用红色框框出来的部分，表示当前程序执行到哪一块，哪一部分，你可以尝试用鼠标点点看，你会发现编辑器会跳转到对应的代码中，当然当前断点的位置通常会在列表的第一条。然后我们使用右键单击，你就可以看到如下图所示：
 
-![](https://raw.githubusercontent.com/xuxiaolei/images/master/20191009091836.png)
+![](https://img.itgo.ml/img/20191009091836.png)
 
 或者你也可以在下图中找到 `Drop Frame`：
 
-![](https://raw.githubusercontent.com/xuxiaolei/images/master/20191009091817.png)
+![](https://img.itgo.ml/img/20191009091817.png)
 
 在IDEA中，所谓的回退，叫 `Drop Frame`，选择`Drop Frame`后，程序会跳转回调用**当前这个方法**的地方，当然已经改变的值是不会恢复的。但是当该方法再次被调用时，你可以观察到某个变量什么时候被改变，至少我们不用再去重新运行一遍程序。
 
@@ -39,7 +39,7 @@ keywords:  IDEA
 
 我们说过，`IDEA`中的`debug`功能是非常强大的，要使用条件断点也非常简单，下面这张图片中 `Condition`中的内容代表当`name`为`eamon:23`时，程序执行到断点处停下来。
 
-![](https://raw.githubusercontent.com/xuxiaolei/images/master/20191009091749.png)
+![](https://img.itgo.ml/img/20191009091749.png)
 
 有了条件断点，这样一来，那些不相关和我们不关心的代码就可以直接跳过了。
 
@@ -49,9 +49,9 @@ keywords:  IDEA
 
 临时断点可以通过在打断点时按住 `Alt` 或者 `option` 键，然后创建断点。也可以通过右键断点处，选择 `more` 然后在窗口中选中 `Remove once hit`
 
-![](https://raw.githubusercontent.com/xuxiaolei/images/master/20191009091725.png)
+![](https://img.itgo.ml/img/20191009091725.png)
 
-![](https://raw.githubusercontent.com/xuxiaolei/images/master/20191009091702.png)
+![](https://img.itgo.ml/img/20191009091702.png)
 
 # 五、求值计算
 
@@ -59,12 +59,12 @@ keywords:  IDEA
 
 这个功能可以在`debug`时在`debug`窗口打开：
 
-![](https://raw.githubusercontent.com/xuxiaolei/images/master/20191009091640.png)
+![](https://img.itgo.ml/img/20191009091640.png)
 
 打开后是这样的：
 
-![](https://raw.githubusercontent.com/xuxiaolei/images/master/20191009091623.png)
+![](https://img.itgo.ml/img/20191009091623.png)
 
 然后你就可以在表达式输入框中，输入你想要的操作，比如，查看变量、修改变量（临时的）、调用某个方法等；这些操作结果将会在下方的`Result` 窗口中输出。
 
-![](https://raw.githubusercontent.com/xuxiaolei/images/master/20191009091519.png)
+![](https://img.itgo.ml/img/20191009091519.png)

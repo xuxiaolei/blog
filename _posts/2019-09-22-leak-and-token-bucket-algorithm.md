@@ -35,7 +35,7 @@ keywords:  Java,高并发,漏桶算法,令牌桶算法
 
 如图所示，把请求比作是水，水来了都先放进桶里，并以限定的速度出水，当水来得过猛而出水不够快时就会导致水直接溢出，即拒绝服务。
 
-![](https://raw.githubusercontent.com/xuxiaolei/images/master/20191008151356.png)
+![](https://img.itgo.ml/img/20191008151356.png)
 
 
 可以看出，漏桶算法可以很好的控制流量的访问速度，一旦超过该速度就拒绝服务。
@@ -46,7 +46,7 @@ keywords:  Java,高并发,漏桶算法,令牌桶算法
 
 令牌桶算法的原理是系统会以一个恒定的速度往桶里放入令牌，而如果请求需要被处理，则需要先从桶里获取一个令牌，当桶里没有令牌可取时，则拒绝服务。从原理上看，令牌桶算法和漏桶算法是相反的，一个“进水”，一个是“漏水”。
 
-![](https://raw.githubusercontent.com/xuxiaolei/images/master/20191008151454.png)
+![](https://img.itgo.ml/img/20191008151454.png)
 
 Google的Guava包中的RateLimiter类就是令牌桶算法的解决方案。
 
@@ -249,4 +249,4 @@ image
 
 #### 可选用的limit策略
 
-![](https://raw.githubusercontent.com/xuxiaolei/images/master/20191008152317.png)
+![](https://img.itgo.ml/img/20191008152317.png)

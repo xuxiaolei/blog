@@ -114,7 +114,7 @@ aof-rewrite-incremental-fsync yes
 *   执行 `shutdown`时，如果没有开启aof，也会触发。
 
 由于 `save` 基本不会被使用到，我们重点看看 `bgsave` 这个命令是如何完成RDB的持久化的。
-![](https://raw.githubusercontent.com/xuxiaolei/images/master/20191008142656.png)
+![](https://img.itgo.ml/img/20191008142656.png)
 
 这里注意的是 `fork` 操作会阻塞，导致Redis读写性能下降。我们可以控制单个Redis实例的最大内存，来尽可能降低Redis在fork时的事件消耗。以及上面提到的自动触发的频率减少fork次数，或者使用手动触发，根据自己的机制来完成持久化。
 
@@ -129,7 +129,7 @@ aof重写是为了减少aof文件的大小，可以手动或者自动触发，�
 **手动触发：** `bgrewriteaof`，**自动触发** 就是根据配置规则来触发，当然自动触发的整体时间还跟Redis的定时任务频率有关系。
 
 下面来看看重写的一个流程图：
-![](https://raw.githubusercontent.com/xuxiaolei/images/master/20191008142628.png)
+![](https://img.itgo.ml/img/20191008142628.png)
 
 对于上图有四个关键点补充一下：
 
@@ -145,7 +145,7 @@ aof重写是为了减少aof文件的大小，可以手动或者自动触发，�
 数据的备份、持久化做完了，我们如何从这些持久化文件中恢复数据呢？如果一台服务器上有既有RDB文件，又有AOF文件，该加载谁呢？
 
 其实想要从这些文件中恢复数据，只需要重新启动Redis即可。我们还是通过图来了解这个流程：
-![image2](https://raw.githubusercontent.com/xuxiaolei/images/master/20191008142537.png "image2")
+![image2](https://img.itgo.ml/img/20191008142537.png "image2")
 
 启动时会先检查AOF文件是否存在，如果不存在就尝试加载RDB。那么为什么会优先加载AOF呢？因为AOF保存的数据更完整，通过上面的分析我们知道AOF基本上最多损失1s的数据。
 
