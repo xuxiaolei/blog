@@ -1,8 +1,8 @@
 ---
 layout: post
-title: IntelliJ-IDEA插件推荐
+title: IntelliJ-IDEA快速生成序列图
 categories: Tools
-description: IntelliJ-IDEA插件推荐
+description: IntelliJ-IDEA快速生成序列图
 keywords:  tools,idea,skill
 ---
 
