@@ -15,7 +15,7 @@ keywords:  Mysql
 
 ```
 explain select * from user where userid =10086 or age =18;
-复制代码
+
 ```
 
 ![](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/758773bfbe904d5ba801bc83d81a6bbc~tplv-k3u1fbpfcp-watermark.image)
@@ -26,7 +26,7 @@ explain select * from user where userid =10086 or age =18;
 
 ```
 delete from euser where age > 30 limit 200;
-复制代码
+
 ```
 
 因为加了limit 主要有这些好处：
@@ -54,7 +54,7 @@ CREATE TABLE `account` (
   PRIMARY KEY (`id`),
   KEY `idx_name` (`name`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=1570068 DEFAULT CHARSET=utf8 ROW_FORMAT=REDUNDANT COMMENT='账户表';
-复制代码
+
 ```
 
 **反例：**
@@ -69,7 +69,7 @@ CREATE TABLE `account` (
   PRIMARY KEY (`id`),
   KEY `idx_name` (`name`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=1570068 DEFAULT CHARSET=utf8;
-复制代码
+
 ```
 
 ### 4\. SQL书写格式，关键字大小保持一致，使用缩进。（SQL规范优雅）
@@ -81,14 +81,14 @@ SELECT stu.name, sum(stu.score)
 FROM Student stu
 WHERE stu.classNo = '1班'
 GROUP BY stu.name
-复制代码
+
 ```
 
 反例：
 
 ```
 SELECT stu.name, sum(stu.score) from Student stu WHERE stu.classNo = '1班' group by stu.name.
-复制代码
+
 ```
 
 显然，统一关键字大小写一致，使用缩进对齐，会使你的SQL看起来更优雅~
@@ -99,14 +99,14 @@ SELECT stu.name, sum(stu.score) from Student stu WHERE stu.classNo = '1班' grou
 
 ```
 insert into Student values ('666','捡田螺的小男孩','100');
-复制代码
+
 ```
 
 正例：
 
 ```
 insert into Student(student_id,name,score) values ('666','捡田螺的小男孩','100');
-复制代码
+
 ```
 
 ### 6\. 变更SQL操作先在测试环境执行，写明详细的操作步骤以及回滚方案，并在上生产前review。（SQL后悔药）
@@ -124,7 +124,7 @@ CREATE TABLE `account` (
   `name` varchar(255) DEFAULT NULL COMMENT '账户名',
   `balance` int(11) DEFAULT NULL COMMENT '余额',
 ) ENGINE=InnoDB AUTO_INCREMENT=1570068 DEFAULT CHARSET=utf8 ROW_FORMAT=REDUNDANT COMMENT='账户表';
-复制代码
+
 ```
 
 正例：
@@ -139,7 +139,7 @@ CREATE TABLE `account` (
   PRIMARY KEY (`id`),
   KEY `idx_name` (`name`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=1570068 DEFAULT CHARSET=utf8 ROW_FORMAT=REDUNDANT COMMENT='账户表';
-复制代码
+
 ```
 
 理由：
@@ -155,7 +155,7 @@ CREATE TABLE `account` (
 
 ```
 select * from user where address ='深圳' order by age ;
-复制代码
+
 ```
 
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1320d5f64b2640ff8221251505cacf14~tplv-k3u1fbpfcp-watermark.image)
@@ -165,7 +165,7 @@ select * from user where address ='深圳' order by age ;
 ```
 添加索引
 alter table user add index idx_address_age (address,age)
-复制代码
+
 ```
 
 ![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/480d9d01a71c40228696fd22850e111d~tplv-k3u1fbpfcp-watermark.image)
@@ -181,7 +181,7 @@ alter table user add index idx_address_age (address,age)
 ```
 //userid 是varchar字符串类型
 select * from user where userid =123;
-复制代码
+
 ```
 
 ![](data:image/svg+xml;utf8,<?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="800" height="600"></svg>)
@@ -190,7 +190,7 @@ select * from user where userid =123;
 
 ```
 select * from user where userid ='123';
-复制代码
+
 ```
 
 ![](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4bae5bd0b3564484b18e6f145ff65fd6~tplv-k3u1fbpfcp-watermark.image)
@@ -214,14 +214,14 @@ select * from user where userid ='123';
 
 ```
 select * from employee;
-复制代码
+
 ```
 
 正例：
 
 ```
 select id，name from employee;
-复制代码
+
 ```
 
 理由：
@@ -248,14 +248,14 @@ Innodb 支持事务，支持行级锁，更好的恢复性，高并发下性能�
 
 ```
   `deptName` char(100) DEFAULT NULL COMMENT '部门名称'
-复制代码
+
 ```
 
 正例：
 
 ```
 `deptName` varchar(100) DEFAULT NULL COMMENT '部门名称'
-复制代码
+
 ```
 
 理由：
@@ -275,7 +275,7 @@ begin;
 update account set balance =1000000
 where name ='捡田螺的小男孩';
 commit;
-复制代码
+
 ```
 
 反例：
@@ -283,7 +283,7 @@ commit;
 ```
 update account set balance =1000000
 where name ='捡田螺的小男孩';
-复制代码
+
 ```
 
 ### 19\. 索引命名要规范，主键索引名为 pk\_ 字段名；唯一索引名为 uk \_字段名 ； 普通索引名则为 idx \_字段名。（SQL规范优雅）
@@ -298,14 +298,14 @@ where name ='捡田螺的小男孩';
 
 ```
 select userId,loginTime from loginuser where Date_ADD(loginTime,Interval 7 DAY) >=now();
-复制代码
+
 ```
 
 **正例：**
 
 ```
 explain  select userId,loginTime from loginuser where  loginTime >= Date_ADD(NOW(),INTERVAL - 7 DAY);
-复制代码
+
 ```
 
 **理由：**
@@ -320,7 +320,7 @@ explain  select userId,loginTime from loginuser where  loginTime >= Date_ADD(NOW
 
 ```
 delete from account  limit 100000;
-复制代码
+
 ```
 
 正例：
@@ -330,7 +330,7 @@ for each(200次)
 {
  delete from account  limit 500;
 }
-复制代码
+
 ```
 
 理由：

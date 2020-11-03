@@ -253,8 +253,6 @@ public class CodeGenerator {
 
 # 三者对比总结
 
-看完3个框架对同一个功能点的实现, 各位看官肯定会有自己的判断，笔者这里也总结了一份比较。
-
 | \- | Mybatis Plus | Fluent Mybatis |
 | --- | --- | --- |
 | 代码生成 | 生成 Entity | 生成Entity, 再通过编译生成 Mapper, Query, Update 和 SqlProvider |
