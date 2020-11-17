@@ -1,9 +1,9 @@
 ---
 layout: post
-title: IntelliJ-IDEA快速生成序列图
-categories: Tools
-description: IntelliJ-IDEA快速生成序列图
-keywords:  tools,idea,skill
+title: SpringBoot原理分析
+categories: Java
+description: SpringBoot原理分析
+keywords:  SpringBoot
 ---
 
 ## **通过SpringBoot源码分析，讲述启动原理**
