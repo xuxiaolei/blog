@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Docker版本Jenkins的使用
+title: 深入学习Java继承
 categories: Java
-description: Docker版本Jenkins的使用
-keywords:  Java,Jenkins,运维,Docker
+description: 深入学习Java继承
+keywords:  Java,继承
 ---
 
 在Java课堂中，所有老师不得不提到**面向对象**（Object Oriented），而在谈到面向对象的时候，又不得不提到面向对象的三大特征：封装、**继承**、多态。三大特征紧密联系而又有区别，本课程就带你学习Java的**继承**。
