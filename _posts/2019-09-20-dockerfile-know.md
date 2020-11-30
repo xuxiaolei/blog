@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Dockerfile命令详解
-categories: Java
+categories: Docker
 description: Dockerfile命令详解
-keywords: Dockerfile
+keywords: Docker,Dockerfile
 ---
 
 制作Dockerfile是Docker入门的基础，在此学习并收集、整理了官网关于制作Dockerfile的全部命令。
