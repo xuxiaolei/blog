@@ -1,0 +1,11 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+ApiGateWay -> CompositePortal: 洛克公园小程序扫码开通会员请求
+CompositePortal --> UserEquityService: 记录三方开通请求记录
+
+RuckerPackTask -> UserEquityService: Another authentication Request
+Alice <-- Bob: another authentication Response
+@enduml
