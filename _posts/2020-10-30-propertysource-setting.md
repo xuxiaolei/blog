@@ -5,10 +5,23 @@ categories: Java
 description: PropertySource配置方式深入了解
 keywords: PropertySource
 ---
+## @PropertySource功能
+ 
+   1. 加载指定的属性文件（*.properties）到 Spring 的 Environment 中。可以配合 @Value 和
+   @ConfigurationProperties 使用。
+   
+   2. @PropertySource 和 @Value
+   组合使用，可以将自定义属性文件中的属性变量值注入到当前类的使用@Value注解的成员变量中。
+   
+   3. @PropertySource 和 @ConfigurationProperties
+   组合使用，可以将属性文件与一个Java类绑定，将属性文件中的变量值注入到该Java类的成员变量中。
+
 
 ## 源码学习
 ---
-首先让我们一起看下**@PropertySource的源码**如下：
+
+让我们一起看下`@PropertySourc`e的源码如下：
+
 ```
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
