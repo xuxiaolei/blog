@@ -5,10 +5,14 @@ categories: Java
 description: Spring定时任务@Scheduled详解
 keywords: Spring,Scheduled
 ---
+在springMVC里使用spring的定时任务非常的简单,可以使用@scheduled定时任务的两种方式，一种是直接@scheduled（cron=”0 0 0 ? * * “），还有一种是使用xml配置
+
+# 详细步骤
 Spring配置文件xmlns加入
 ``` xml
 xmlns:task="http://www.springframework.org/schema/task"
 ```
+
 xsi:schemaLocation中加入
 ``` xml
 http://www.springframework.org/schema/task

@@ -98,18 +98,31 @@ keywords:  Linux
 注意：Linux默认是不知此NTFS文件系统的
 
 # mmcblk0p0和sda1等等的含义
+
 1. mmcblk0p0
+
      1.1. mmc含义
+     
         SD/MMC 卡的设备构造差不多，MMC 应该是 SD 的前身，不过 MMC 当时的设计比 SD 小一半。所以，SD/MMC 的驱动通用，进一步的，Linux 的设备节点就延续了 MMC 的这个名字
+     
      1.2. blk含义
+     
          blk 是块设备，后面的数字是设备的顺序编号
+     
      1.3 p含义
+     
          p表示分区，p1 就是第一个分区
 
 2. sda1
+
     2.1 sdxx
+    
         sd是scsi,SATA硬盘设备。
+        
     2.2. sda1
+    
         a代表是第一块硬盘 1代表是第一个主分区
+        
     2.3. sdb1
+    
         b代表是第二块硬盘 1代表是第一个主分区
