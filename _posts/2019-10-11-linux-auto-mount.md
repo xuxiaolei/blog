@@ -7,19 +7,42 @@ keywords:  Linux
 ---
 #### 1、查询与自动挂载
 
+#查询系统中已经挂载的设备
 ```
 [root@localhost ~]# mount
 
 ```
 
-#查询系统中已经挂载的设备
+#依据配置文件/etc/fstab的内容，自动挂载
 
 ```
 [root@localhost ~]# mount -a
 
 ```
+#我们打开fstab这个文件看看吧，执行如下命令：
 
-#依据配置文件/etc/fstab的内容，自动挂载
+```
+[root@localhost ~]# vi /etc/fstab
+UUID=c2ca6f57-b15c-43ea-bca0-f239083d8bd2 / ext4 defaults 1 1
+UUID=0b23d315-33a7-48a4-bd37-9248e5c44345 /boot ext4 defaults 1 2
+UUID=4021be19-2751-4dd2-98cc-383368c39edb swap swap defaults 0 0
+#只有这三个是真正的硬盘分区，下面的都是虚拟文件系统或交换分区
+tmpfs /dev/shm tmpfs defaults 0 0
+devpts /dev/pts devpts gid=5, mode=620 0 0
+sysfs /sys sysfe defaults 0 0
+proc /proc proc defaults 0 0
+```
+tmpfs、devpts、sysfs 和 proc 这几行，它们分别是与共享内存、终端窗口、设备信息和内核参数相关联的特殊设备。
+
+可以看到，在 fstab 文件中，每行数据都分为了 6 个字段，它们的含义分别是：
+
+1.  用来挂载每个文件系统的分区设备文件名或 UUID（用于指代设备名）；
+2.  挂载点；
+3.  文件系统的类型；
+4.  各种挂载参数；
+5.  指定分区是否被 dump 备份；
+6.  指定分区是否被 fsck 检测
+
 
 #### 2、挂载命令格式
 
